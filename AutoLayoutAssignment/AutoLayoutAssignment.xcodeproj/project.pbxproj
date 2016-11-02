@@ -14,6 +14,7 @@
 		6714F5C41DC78F68002DD602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6714F5C21DC78F68002DD602 /* LaunchScreen.storyboard */; };
 		673A9EA71DC87EF700CE499B /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9EA61DC87EF700CE499B /* ForgotPassViewController.swift */; };
 		67F0DF9A1DC87A5C004C177B /* CustomBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0DF991DC87A5C004C177B /* CustomBarController.swift */; };
+		8C92FF94A1DC82B0BD04290B /* Pods_AutoLayoutAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF064695EC1DCF62488E2A25 /* Pods_AutoLayoutAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		6714F5C51DC78F68002DD602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		673A9EA61DC87EF700CE499B /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		67F0DF991DC87A5C004C177B /* CustomBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBarController.swift; sourceTree = "<group>"; };
+		B0BFA2EF858566D8F37AED75 /* Pods-AutoLayoutAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutAssignment/Pods-AutoLayoutAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		D9362DD4485889E41CBB079E /* Pods-AutoLayoutAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutAssignment/Pods-AutoLayoutAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		EF064695EC1DCF62488E2A25 /* Pods_AutoLayoutAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C92FF94A1DC82B0BD04290B /* Pods_AutoLayoutAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				6714F5B81DC78F68002DD602 /* AutoLayoutAssignment */,
 				6714F5B71DC78F68002DD602 /* Products */,
+				BF77264801E4AB4C582FFF58 /* Pods */,
+				79DD7E82918C0AD5F4FF77BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = AutoLayoutAssignment;
 			sourceTree = "<group>";
 		};
+		79DD7E82918C0AD5F4FF77BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF064695EC1DCF62488E2A25 /* Pods_AutoLayoutAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF77264801E4AB4C582FFF58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9362DD4485889E41CBB079E /* Pods-AutoLayoutAssignment.debug.xcconfig */,
+				B0BFA2EF858566D8F37AED75 /* Pods-AutoLayoutAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6714F5C81DC78F68002DD602 /* Build configuration list for PBXNativeTarget "AutoLayoutAssignment" */;
 			buildPhases = (
+				6E4E2A6F66F6EAD3ABE17425 /* [CP] Check Pods Manifest.lock */,
 				6714F5B21DC78F67002DD602 /* Sources */,
 				6714F5B31DC78F67002DD602 /* Frameworks */,
 				6714F5B41DC78F67002DD602 /* Resources */,
+				32F37EBA325C5FE4AB64DC53 /* [CP] Embed Pods Frameworks */,
+				1FAAFBF74E79F278CC3D123B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FAAFBF74E79F278CC3D123B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutAssignment/Pods-AutoLayoutAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32F37EBA325C5FE4AB64DC53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutAssignment/Pods-AutoLayoutAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E4E2A6F66F6EAD3ABE17425 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6714F5B21DC78F67002DD602 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		6714F5C91DC78F68002DD602 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9362DD4485889E41CBB079E /* Pods-AutoLayoutAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PBF5QD74E4;
@@ -280,6 +356,7 @@
 		};
 		6714F5CA1DC78F68002DD602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BFA2EF858566D8F37AED75 /* Pods-AutoLayoutAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PBF5QD74E4;

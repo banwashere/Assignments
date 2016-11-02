@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IHKeyboardAvoiding
+
 
 class ViewController: UIViewController, UITextFieldDelegate{
 
@@ -54,6 +56,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
         usernameTextField.attributedPlaceholder = NSAttributedString(string:"Username or email", attributes: [NSForegroundColorAttributeName: UIColor(white: 1.0 , alpha: 0.50)])
         passwordTextField.attributedPlaceholder = NSAttributedString(string:"", attributes: [NSForegroundColorAttributeName: UIColor(white: 1.0 , alpha: 0.50)])
         
+        IHKeyboardAvoiding.setAvoiding(forgotPassBtn)
+        
         if self.view.bounds.size.height < 667 {
             
             logoTopConstraint.constant = 10
@@ -70,6 +74,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
         
     }
+    
+    
+ 
 
 
 }
